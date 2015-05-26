@@ -14,7 +14,7 @@
     function scLightbox($animate, $modal) {
         return {
             restrict: 'AEC',
-            templateUrl: 'module/service-planning/directive/lightbox/scania-angular-upload.html',
+            templateUrl: 'template/lightbox/scania-angular-upload.html',
             controllerAs: 'lightbox',
             controller: function ($scope, $attrs) {
                 $animate.enabled(false); // to solve the conflict between ngAnimate and ui-bootstrap animate
@@ -27,7 +27,7 @@
 
                     self.modalInstance = $modal.open({
                         animation: $attrs.animation,
-                        templateUrl: 'module/service-planning/directive/lightbox/scania-angular-lightbox.html',
+                        templateUrl: 'template/lightbox/scania-angular-lightbox.html',
                         size: $attrs.size,
                         windowClass: $attrs.windowclass,
                         scope: $scope,
