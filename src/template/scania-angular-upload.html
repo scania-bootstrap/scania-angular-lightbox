@@ -1,0 +1,14 @@
+<div flow-init="" flow-name="lightbox.flow" class="sc-angular-upload"
+     flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]"
+     class="row ng-scope">
+    <div class="btn btn-default icon-upload-alt" flow-btn="">
+        <input type="file" multiple="multiple" style="visibility: hidden; position: absolute;">
+    </div>
+    <div class="form-group">
+        <div ng-repeat="file in $flow.files" class="gallery-box ng-scope image-with-delete-icon">
+            <a ng-click="lightbox.open($index)">
+                <img class="thumbnail img-responsive" flow-img="file"/>
+            </a>
+        </div>
+    </div>
+</div>

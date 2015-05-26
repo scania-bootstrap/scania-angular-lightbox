@@ -1,0 +1,15 @@
+<div flow-init="" class="lightbox">
+    <div class="modal-header">
+        <div class="pull-right">
+            <a ng-click="lightbox.deleteImage()"><i class="text-muted icon-trash icon-2x type--padding-right"></i></a>
+            <a ng-click="lightbox.modalInstance.dismiss()"><i class="text-muted icon-remove-sign icon-2x"></i></a>
+        </div>
+    </div>
+    <div class="modal-body">
+        <carousel interval="0">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img class="img-responsive" ng-attr-flow-img="slide" ng-bind="setAsActive(slide)"/>
+            </slide>
+        </carousel>
+    </div>
+</div>

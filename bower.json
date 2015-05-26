@@ -1,0 +1,53 @@
+{
+  "name": "scania-angular-lightbox",
+  "version": "0.0.1",
+  "description": "File upload and gallery extension on angularJs framework",
+  "main": [
+    "src/scania-angular-lightbox.js",
+    "less/scania-angular-lightbox.less",
+    "template/scania-angular-lightbox.html",
+    "template/scania-angular-upload.html"
+  ],
+  "keywords": [
+    "scania-angular-lightbox",
+    "sc-lightbox",
+    "angular-lightbox",
+    "angular-file-upload",
+    "angular-select",
+    "fileupload",
+    "ng-flow",
+    "ng-gallery",
+    "lightbox"
+  ],
+  "authors": [
+    "Scania",
+    "Mohammed Ayowa <mohammed.ayowa@scania.com> (mohammed.ayowa@scania.com)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scania-bootstrap/scania-angular-lightbox.git"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.4",
+    "angular-animate": "~1.3.0",
+    "angular-bootstrap": "0.12.1",
+    "flow.js": "2.9.0",
+    "ng-flow": "~2"
+
+  },
+  "devDependencies": {
+    "bootstrap": "3.3.4",
+    "angular-bootstrap": "0.12.1",
+    "flow.js": "2.9.0",
+    "ng-flow": "~2"
+  },
+  "homepage": "https://github.com/scania-bootstrap/scania-angular-lightbox"
+}
