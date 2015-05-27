@@ -20,6 +20,7 @@
                 $animate.enabled(false); // to solve the conflict between ngAnimate and ui-bootstrap animate
                 var self = this;
 
+                self.interval = $attrs.interval;
                 self.open = function (index) {
                     $scope.slides = self.flow.files;
                     $scope.slides[index].active = true;
@@ -56,9 +57,9 @@
     }
     /**
      * @ngdoc module
-     * @name scania.directives
+     * @name scania.angular.lightbox
      *
-     * @description Scania directives module
+     * @description  Scania lightbox module
      */
-    angular.module('scania.directives', []).directive('scLightbox', scLightbox);
+    angular.module('scania.angular.lightbox', []).directive('scLightbox', scLightbox);
 })();
