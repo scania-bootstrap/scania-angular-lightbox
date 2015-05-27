@@ -35,7 +35,7 @@ Add the following script to your index.html file and you are good to go :<br/>
 
 Next inject the directive into your app
 
-    angular.module('yourapp', ['scania.directives']);
+    angular.module('yourapp', ['scania.angular.lightbox']);
 
 A complete example can be found <a href="http://embed.plnkr.co/PlVBJeLgy5CgqED6rzQq/preview">here</a>
 
