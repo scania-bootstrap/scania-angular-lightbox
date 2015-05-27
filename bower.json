@@ -1,9 +1,10 @@
 {
   "name": "scania-angular-lightbox",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "File upload and gallery extension on angularJs framework",
   "main": [
     "src/scania-angular-lightbox.js",
+    "src/scania-angular-lightbox-tpls.js",
     "less/scania-angular-lightbox.less",
     "template/scania-angular-lightbox.html",
     "template/scania-angular-upload.html"
