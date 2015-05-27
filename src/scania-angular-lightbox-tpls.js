@@ -65,7 +65,7 @@
 
     angular.module("template/scania-angular-upload.html", []).run(["$templateCache", function($templateCache) {
         $templateCache.put("template/scania-angular-upload.html",
-            "<div flow-init=\"\" flow-name=\"lightbox.flow\" class=\"sc-angular-upload\" flow-file-added=\"!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]\" class=\"row ng-scope\">\n" +
+            "<div flow-init=\"\" flow-name=\"lightbox.flow\" class=\"row sc-angular-upload\" flow-file-added=\"!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]\">\n" +
             "  <div class=\"btn btn-default icon-upload-alt\" flow-btn=\"\">\n" +
             "       <input type=\"file\" multiple=\"multiple\" style=\"visibility: hidden; position: absolute;\">\n" +
             "  </div>\n" +
