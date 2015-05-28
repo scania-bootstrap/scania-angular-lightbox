@@ -1,4 +1,6 @@
 # scania-angular-lightbox
+
+[![Join the chat at https://gitter.im/scania-bootstrap/scania-angular-lightbox](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/scania-bootstrap/scania-angular-lightbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 File upload and gallery extension on angularJs framework
 
 Scania angular-lightbox is an extension for file upload and gallery on AngularJs framework.
