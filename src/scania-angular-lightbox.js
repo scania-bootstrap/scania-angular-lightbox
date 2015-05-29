@@ -3,14 +3,28 @@
  * https://github.com/scania-bootstrap/scania-angular-lightbox
  * License: MIT
  *
- * @ngdoc directive
- * @name scLightbox
- * @module scania.directives
- *
- * @description file upload and gallery extension on angularJs framework
  */
 (function () {
     'use strict';
+
+    /**
+     * @ngdoc module
+     * @name scania.angular.lightbox
+     *
+     * @description  Scania lightbox module
+     */
+    angular.module('scania.angular.lightbox', ['flow']).directive('scLightbox', ['$animate', '$modal', scLightbox]);
+
+    /**
+     * @ngdoc directive
+     * @name scLightbox
+     * @module scania.directives
+     *
+     * @description file upload and gallery extension on angularJs framework
+     * @param $animate
+     * @param $modal
+     * @returns {{restrict: string, templateUrl: string, controllerAs: string, controller: Function}}
+     */
     function scLightbox($animate, $modal) {
         return {
             restrict: 'AEC',
@@ -55,11 +69,4 @@
             }
         };
     }
-    /**
-     * @ngdoc module
-     * @name scania.angular.lightbox
-     *
-     * @description  Scania lightbox module
-     */
-    angular.module('scania.angular.lightbox', []).directive('scLightbox', scLightbox);
 })();

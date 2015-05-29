@@ -2,7 +2,7 @@
 
 File upload and gallery extension on angularJs framework
 
-Scania angular-lightbox is an extension for file upload and gallery on AngularJs framework.
+scania-angular-lightbox is an extension for file upload and gallery on AngularJs framework.
 
 ###<a href="http://embed.plnkr.co/PlVBJeLgy5CgqED6rzQq/preview">Demo</a>
 
