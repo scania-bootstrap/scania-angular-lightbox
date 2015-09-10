@@ -11,70 +11,11 @@
      * @ngdoc module
      * @name scania.angular.lightbox.tpls
      *
-     * @description Scania lightbox module
+     * @description Scania lightbox module templates
      */
-    angular.module('scania.angular.lightbox.tpls', ['flow', 'template/scania-angular-upload.html', 'template/scania-angular-lightbox.html']).directive('scLightbox', ['$animate', '$modal', scLightbox]);
-
-    /**
-     * @ngdoc directive
-     * @name scLightbox
-     * @module scania.directives
-     *
-     * @description file upload and gallery extension on angularJs framework
-     *
-     *
-     * @param $animate
-     * @param $modal
-     * @returns {{restrict: string, templateUrl: string, controllerAs: string, controller: Function}}
-     */
-    function scLightbox($animate, $modal) {
-        return {
-            restrict: 'AEC',
-            templateUrl: 'template/scania-angular-upload.html',
-            controllerAs: 'lightbox',
-            controller: function ($scope, $attrs) {
-                $animate.enabled(false); // to solve the conflict between ngAnimate and ui-bootstrap animate
-                var self = this;
-
-                self.interval = $attrs.interval;
-                self.open = function (index) {
-                    $scope.slides = self.flow.files;
-                    $scope.slides[index].active = true;
-                    self.activeImage = $scope.slides[index];
-
-                    self.modalInstance = $modal.open({
-                        animation: $attrs.animation,
-                        templateUrl: 'template/scania-angular-lightbox.html',
-                        size: $attrs.size,
-                        windowClass: $attrs.windowclass,
-                        scope: $scope,
-                        resolve: {
-                            slides: function () {
-                                return $scope.slides;
-                            }
-                        },
-                        controller: function ($scope) {
-                            $scope.setAsActive = function (slide) {
-                                if (slide.active) {
-                                    self.activeImage = slide;
-                                }
-                            };
-                        }
-                    });
-                };
-                self.deleteImage = function () {
-                    self.activeImage.cancel();
-                    if ($scope.slides.length === 0) {
-                        self.modalInstance.dismiss();
-                    }
-                };
-            }
-        };
-    }
-
-    angular.module("template/scania-angular-upload.html", []).run(["$templateCache", function($templateCache) {
+    angular.module('scania.angular.lightbox').run(["$templateCache", function ($templateCache) {
         $templateCache.put("template/scania-angular-upload.html",
-            "<div flow-init=\"\" flow-name=\"lightbox.flow\" class=\"row sc-angular-upload\" flow-file-added=\"!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]\">\n" +
+            "<div flow-init=\"\" flow-name=\"lightbox.flow\" class=\"sc-angular-upload\" flow-file-added=\"!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]\" class=\"row ng-scope\">\n" +
             "  <div class=\"btn btn-default icon-upload-alt\" flow-btn=\"\">\n" +
             "       <input type=\"file\" multiple=\"multiple\" style=\"visibility: hidden; position: absolute;\">\n" +
             "  </div>\n" +
@@ -88,7 +29,7 @@
             "</div>\n" +
             "");
     }]);
-    angular.module("template/scania-angular-lightbox.html", []).run(["$templateCache", function($templateCache) {
+    angular.module('scania.angular.lightbox').run(["$templateCache", function ($templateCache) {
         $templateCache.put("template/scania-angular-lightbox.html",
             "<div flow-init=\"\" class=\"lightbox\">\n" +
             "   <div class=\"modal-header\">\n" +

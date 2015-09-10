@@ -2,7 +2,7 @@
 
 File upload and gallery extension on angularJs framework
 
-scania-angular-lightbox is an extension for file upload and gallery on AngularJs framework.
+scania-angular-lightbox is an extension for file upload and gallery on AngularJs framework. The ```-tpls``` file contains the templates bundled in JavaScript, include it if you want to use default templates we provide or load your custom templates.
 
 ###<a href="http://embed.plnkr.co/PlVBJeLgy5CgqED6rzQq/preview">Demo</a>
 
@@ -10,10 +10,10 @@ scania-angular-lightbox is an extension for file upload and gallery on AngularJs
 
 ##Requirements
 
-        <a href="http://getbootstrap.com/">Bootstrap</a><br/>
-        <a href="https://angularjs.org/">Angular animate</a><br/>
-        <a href="http://flowjs.github.io/ng-flow/">flow/ng-flow</a><br/>
-        <a href="https://angular-ui.github.io/bootstrap/">UI Bootstrap</a><br/>
+<a href="http://getbootstrap.com/">Bootstrap</a><br/>
+<a href="https://angularjs.org/">Angular animate</a><br/>
+<a href="http://flowjs.github.io/ng-flow/">flow/ng-flow</a><br/>
+<a href="https://angular-ui.github.io/bootstrap/">UI Bootstrap</a><br/>
 
 ## Installation
 
@@ -29,9 +29,8 @@ Add the following script to your index.html file and you are good to go :<br/>
     <link href="scania-angular-lightbox.css"  rel="stylesheet" type="text/css">
 
     <script src="bower_components/flow.js/dist/flow.js"></script>
-    <script src="bower_components/ng-flow/dist/ng-flow.js"></script>
-    <script src="bower_components/scania-angular-lightbox/src/scania-angular-lightbox-tpls.js"></script> (id you want to use default templates)
-    <script src="bower_components/scania-angular-lightbox/src/scania-angular-lightbox.js"></script> (is you want to provide your own templates)
+    <script src="bower_components/ng-flow/dist/ng-flow.js"></script>(is you want to provide your own templates)
+    <script src="bower_components/scania-angular-lightbox/src/scania-angular-lightbox-tpls.js"></script> (if you want to use default templates)
 
 
 Next inject the directive into your app
