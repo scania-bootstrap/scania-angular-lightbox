@@ -1,9 +1,11 @@
 /**
- * scania-angular-lightbox
- * https://github.com/scania-bootstrap/scania-angular-lightbox
+ * scania-angular-ui-tpls
+ * https://github.com/scania-bootstrap/scania-angular-ui
  * License: MIT
  *
+ *
  */
+
 (function () {
     'use strict';
 
@@ -11,9 +13,10 @@
      * @ngdoc module
      * @name scania.angular.lightbox.tpls
      *
-     * @description Scania lightbox module templates
+     * @description
+     * Scania lightbox module including templates
      */
-    angular.module('scania.angular.lightbox').run(["$templateCache", function ($templateCache) {
+    angular.module('scania.angular.ui').run(["$templateCache", function ($templateCache) {
         $templateCache.put("template/scania-angular-upload.html",
             "<div flow-init=\"\" flow-name=\"lightbox.flow\" class=\"sc-angular-upload\" flow-file-added=\"!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]\" class=\"row ng-scope\">\n" +
             "  <div class=\"btn btn-default icon-upload-alt\" flow-btn=\"\">\n" +
@@ -29,13 +32,13 @@
             "</div>\n" +
             "");
     }]);
-    angular.module('scania.angular.lightbox').run(["$templateCache", function ($templateCache) {
+    angular.module('scania.angular.ui').run(["$templateCache", function ($templateCache) {
         $templateCache.put("template/scania-angular-lightbox.html",
             "<div flow-init=\"\" class=\"lightbox\">\n" +
             "   <div class=\"modal-header\">\n" +
             "       <div class=\"pull-right\">\n" +
-            "           <a ng-click=\"lightbox.deleteImage()\"><i class=\"text-muted icon-trash icon-2x type--padding-right\"></i></a>\n" +
-            "           <a ng-click=\"lightbox.modalInstance.dismiss('cancel')\"><i class=\"text-muted icon-remove-sign icon-2x\"></i></a>\n" +
+            "           <a ng-click=\"lightbox.deleteImage()\"><i class=\"text-muted icon-trash fa-2x icon-2x \"></i></a>\n" +
+            "           <a ng-click=\"lightbox.modalInstance.dismiss('cancel')\"><i class=\"text-muted icon-remove-sign fa-2x icon-2x\"></i></a>\n" +
             "       </div>\n" +
             "   </div>\n" +
             "   <div class=\"modal-body\">\n" +
@@ -48,4 +51,5 @@
             " </div>\n" +
             "");
     }]);
+
 })();

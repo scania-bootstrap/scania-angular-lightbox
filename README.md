@@ -13,7 +13,6 @@ scania-angular-lightbox is an extension for file upload and gallery on AngularJs
 <a href="http://getbootstrap.com/">Bootstrap</a><br/>
 <a href="https://angularjs.org/">Angular animate</a><br/>
 <a href="http://flowjs.github.io/ng-flow/">flow/ng-flow</a><br/>
-<a href="https://angular-ui.github.io/bootstrap/">UI Bootstrap</a><br/>
 
 ## Installation
 
@@ -25,12 +24,14 @@ scania-angular-lightbox is an extension for file upload and gallery on AngularJs
 Add the following script to your index.html file and you are good to go :<br/>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="https://static.scania.com/development/global/css/scania-bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="scania-angular-lightbox.css"  rel="stylesheet" type="text/css">
+           or
+    <link href="bower_components/scania-bootstrap-ui/css/scania-bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css"  href="/bower_components/scania-angular-lightbox/src/ui-bootstrap/ui-bootstrap-custom-0.13.4-csp.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/scania-angular-lightbox/css/scania-angular-lightbox.css" >
 
     <script src="bower_components/flow.js/dist/flow.js"></script>
-    <script src="bower_components/ng-flow/dist/ng-flow.js"></script>(is you want to provide your own templates)
-    <script src="bower_components/scania-angular-lightbox/src/scania-angular-lightbox-tpls.js"></script> (if you want to use default templates)
+     <script src="bower_components/scania-angular-ui/src/scania-angular-lightbox.js"></script>
+    <script src="bower_components/scania-angular-lightbox/src/scania-angular-lightbox-tpls.js"></script> (if you want to use default templates bundled with scania-angular-lightbox)
 
 
 Next inject the directive into your app

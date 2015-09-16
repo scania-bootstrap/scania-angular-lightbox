@@ -13,19 +13,20 @@
      *
      * @description  Scania lightbox module
      */
-    angular.module('scania.angular.lightbox', ['flow']).directive('scLightbox', ['$animate', '$modal', scLightbox]);
-
+    angular.module('scania.angular.lightbox', ['flow', 'ui.bootstrap']).directive('scLightbox', ['$scmodal', scLightbox]);
     /**
+     /**
      * @ngdoc directive
      * @name scLightbox
-     * @module scania.directives
+     * @module scania.angular.lightbox
      *
      * @description file upload and gallery extension on angularJs framework
-     * @param $animate
-     * @param $modal
+     * @param $scmodal
      * @returns {{restrict: string, templateUrl: string, controllerAs: string, controller: Function}}
      */
-    function scLightbox($animate, $modal) {
+
+    function scLightbox($scmodal) {
+
         return {
             restrict: 'AEC',
             templateUrl: 'template/scania-angular-upload.html',
@@ -40,7 +41,7 @@
                     $scope.slides[index].active = true;
                     self.activeImage = $scope.slides[index];
 
-                    self.modalInstance = $modal.open({
+                    self.modalInstance = $scmodal.open({
                         animation: $attrs.animation,
                         templateUrl: 'template/scania-angular-lightbox.html',
                         size: $attrs.size,
