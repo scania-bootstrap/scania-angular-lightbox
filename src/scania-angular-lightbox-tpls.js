@@ -1,6 +1,6 @@
 /**
  * scania-angular-ui-tpls
- * https://github.com/scania-bootstrap/scania-angular-ui
+ * https://github.com/scania-bootstrap/scania-angular-lightbox
  * License: MIT
  *
  *
@@ -16,7 +16,7 @@
      * @description
      * Scania lightbox module including templates
      */
-    angular.module('scania.angular.ui').run(["$templateCache", function ($templateCache) {
+    angular.module('scania.angular.lightbox').run(["$templateCache", function ($templateCache) {
         $templateCache.put("template/scania-angular-upload.html",
             "<div flow-init=\"\" flow-name=\"lightbox.flow\" class=\"sc-angular-upload\" flow-file-added=\"!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]\" class=\"row ng-scope\">\n" +
             "  <div class=\"btn btn-default icon-upload-alt\" flow-btn=\"\">\n" +
@@ -32,7 +32,7 @@
             "</div>\n" +
             "");
     }]);
-    angular.module('scania.angular.ui').run(["$templateCache", function ($templateCache) {
+    angular.module('scania.angular.lightbox').run(["$templateCache", function ($templateCache) {
         $templateCache.put("template/scania-angular-lightbox.html",
             "<div flow-init=\"\" class=\"lightbox\">\n" +
             "   <div class=\"modal-header\">\n" +
