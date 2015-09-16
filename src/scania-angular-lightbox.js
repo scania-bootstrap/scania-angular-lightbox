@@ -32,7 +32,6 @@
             templateUrl: 'template/scania-angular-upload.html',
             controllerAs: 'lightbox',
             controller: function ($scope, $attrs) {
-                $animate.enabled(false); // to solve the conflict between ngAnimate and ui-bootstrap animate
                 var self = this;
 
                 self.interval = $attrs.interval;
