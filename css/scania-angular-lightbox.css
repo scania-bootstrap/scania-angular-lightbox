@@ -59,48 +59,48 @@
 
 
 
-.bootstrap .modal .modal-dialog {
+.bootstrap div[modal-in-class='in'] .modal-dialog {
     width: auto;
     max-width: 100%;
     margin: 0;
     height: 100%;
 }
-.bootstrap .modal .modal-dialog .modal-content {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content {
     background-color: transparent;
     border: 0;
     border-radius: 0;
 }
-.bootstrap .modal .modal-dialog .modal-content .modal-header {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .modal-header {
     border-bottom: none;
     height: 55px;
     background: black;
     position: relative;
     z-index: 1;
 }
-.bootstrap .modal .modal-dialog .modal-content .modal-body {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .modal-body {
     padding: 0;
 }
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body {
     padding-top: 55px;
     margin-top: -55px;
 }
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel {
     background-color: rgba(0, 0, 0, 0.6);
 }
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner {
     max-width: 70%;
     margin: 0 auto;
 }
-.bootstrap .modal .modal-dialog .modal-content,
-.bootstrap .modal .modal-dialog .modal-content .lightbox,
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body,
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel,
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner,
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner > div,
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner > div > img {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content,
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox,
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body,
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel,
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner,
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner > div,
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner > div > img {
     height: inherit;
 }
-.bootstrap .modal .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner > div > img {
+.bootstrap div[modal-in-class='in'] .modal-dialog .modal-content .lightbox .modal-body .carousel .carousel-inner > div > img {
     width: auto;
     max-width: 10%;
     max-height: 10%;
